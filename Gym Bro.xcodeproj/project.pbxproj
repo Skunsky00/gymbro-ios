@@ -6,8 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E09DB76308BD8C90001D604 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB75308BD8C90001D604 /* FirebaseAnalytics */; };
+		4E09DB78308BD8C90001D604 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB77308BD8C90001D604 /* FirebaseAuth */; };
+		4E09DB7A308BD8D40001D604 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB79308BD8D40001D604 /* FirebaseCore */; };
+		4E09DB7C308BD8D40001D604 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB7B308BD8D40001D604 /* FirebaseFirestore */; };
+		4E09DB7E308BD8D40001D604 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB7D308BD8D40001D604 /* FirebaseFunctions */; };
+		4E09DB80308BD8E80001D604 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB7F308BD8E80001D604 /* FirebaseMessaging */; };
+		4E09DB82308BD8E80001D604 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4E09DB81308BD8E80001D604 /* FirebaseStorage */; };
+		4E4AEEAB30983BDB00CA3158 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4AEEAA30983BDB00CA3158 /* StoreKit.framework */; };
+		4E4AEF5930983E6900CA3158 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 4E4AEF5830983E6900CA3158 /* RevenueCat */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4E09DB20308BD4C60001D604 /* Gym Bro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Bro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4AEEAA30983BDB00CA3158 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +36,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E09DB80308BD8E80001D604 /* FirebaseMessaging in Frameworks */,
+				4E09DB76308BD8C90001D604 /* FirebaseAnalytics in Frameworks */,
+				4E09DB7C308BD8D40001D604 /* FirebaseFirestore in Frameworks */,
+				4E4AEEAB30983BDB00CA3158 /* StoreKit.framework in Frameworks */,
+				4E09DB7E308BD8D40001D604 /* FirebaseFunctions in Frameworks */,
+				4E4AEF5930983E6900CA3158 /* RevenueCat in Frameworks */,
+				4E09DB82308BD8E80001D604 /* FirebaseStorage in Frameworks */,
+				4E09DB7A308BD8D40001D604 /* FirebaseCore in Frameworks */,
+				4E09DB78308BD8C90001D604 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4E09DB22308BD4C60001D604 /* Gym Bro */,
+				4E09DB74308BD8C90001D604 /* Frameworks */,
 				4E09DB21308BD4C60001D604 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,14 @@
 				4E09DB20308BD4C60001D604 /* Gym Bro.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E09DB74308BD8C90001D604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E4AEEAA30983BDB00CA3158 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +96,14 @@
 			);
 			name = "Gym Bro";
 			packageProductDependencies = (
+				4E09DB75308BD8C90001D604 /* FirebaseAnalytics */,
+				4E09DB77308BD8C90001D604 /* FirebaseAuth */,
+				4E09DB79308BD8D40001D604 /* FirebaseCore */,
+				4E09DB7B308BD8D40001D604 /* FirebaseFirestore */,
+				4E09DB7D308BD8D40001D604 /* FirebaseFunctions */,
+				4E09DB7F308BD8E80001D604 /* FirebaseMessaging */,
+				4E09DB81308BD8E80001D604 /* FirebaseStorage */,
+				4E4AEF5830983E6900CA3158 /* RevenueCat */,
 			);
 			productName = "Gym Bro";
 			productReference = 4E09DB20308BD4C60001D604 /* Gym Bro.app */;
@@ -94,6 +133,10 @@
 			);
 			mainGroup = 4E09DB17308BD4C60001D604;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4E09DCED3096E7720001D604 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4E09DB21308BD4C60001D604 /* Products */;
 			projectDirPath = "";
@@ -249,15 +292,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gym Bro/Gym Bro.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5K8U9AH5WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gym-Bro-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,15 +327,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gym Bro/Gym Bro.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5K8U9AH5WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gym-Bro-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +379,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.1.1;
+			};
+		};
+		4E09DCED3096E7720001D604 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.100.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E09DB75308BD8C90001D604 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4E09DB77308BD8C90001D604 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4E09DB79308BD8D40001D604 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4E09DB7B308BD8D40001D604 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4E09DB7D308BD8D40001D604 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		4E09DB7F308BD8E80001D604 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		4E09DB81308BD8E80001D604 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DB73308BD85E0001D604 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		4E4AEF5830983E6900CA3158 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E09DCED3096E7720001D604 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E09DB18308BD4C60001D604 /* Project object */;
 }
